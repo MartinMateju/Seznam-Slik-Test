@@ -4,7 +4,7 @@ This is a naive solution for seznam-slik test
 ## How to execute app
 1. Run "docker-compose up" on your local machine
 2. Access http://localhost:5000/impressions to fetch impressions
-3. Access http://localhost:5000/impressions to fetch clicks
+3. Access http://localhost:5000/clicks to fetch clicks
 
 ## Database login
 In order to login use the following commands:

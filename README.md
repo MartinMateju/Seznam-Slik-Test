@@ -1,4 +1,5 @@
 # Seznam Sklik - Test #
+This is a naive solution for seznam-slik test
 
 ## How to execute app
 1. Run "docker-compose up" on your local machine

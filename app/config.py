@@ -5,7 +5,7 @@ PORT = '3306'
 DB_TEST = 'MYSQLTEST'
 QUERY_INSERT_CLICK = """INSERT INTO clicks (clickTimestamp, impressionId) VALUES (%s, %s) """
 QUERY_INSERT_IMPRESSION = """INSERT INTO impressions (impressionTime, impressionId, adId, visitorHash) VALUES (%s, %s, %s, %s) """
-QUERY_GET_IMPRESSIONS = """SELECT COUNT(adId) FROM impressions WHERE adId={ad_id} AND impressionTime between '{date} 00:00:00' and '{date} 23:59:00'"""
+QUERY_GET_IMPRESSIONS = """SELECT COUNT({adId}) FROM impressions WHERE adId={ad_id} AND impressionTime between '{date} 00:00:00' and '{date} 23:59:00'"""
 QUERY_GET_CLICKS = """
 with recursive d as (
       select impressionId, clickTimestamp,

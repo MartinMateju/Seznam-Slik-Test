@@ -1,6 +1,6 @@
-from flask import Flask
 import config as CONFIG
 
+from flask import Flask
 from utils import load_csv, db_import, run_io_tasks_in_parallel, create_db_scheme, execute_query
 
 
